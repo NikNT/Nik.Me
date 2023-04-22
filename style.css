@@ -7,11 +7,14 @@ html {
 }
 
 body {
-  background-color: #000000;
+  /* background-color: #000000; */
+  /* background-color: #101010; */
+  background: #101010;
 }
 
 .nav-bar {
-  background-color: #101010;
+  /* background-color: #101010; */
+  background-color: #000000;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -81,6 +84,21 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background: linear-gradient(
+    to right,
+    #ef5350,
+    #f48fb1,
+    #7e57c2,
+    #2196f3,
+    #26c6da,
+    #43a047,
+    #eeff41,
+    #f9a825,
+    #ff5722
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .right-hero p {
