@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@300&family=Zen+Dots&display=swap");
+
+html {
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Zen Dots", cursive;
+}
+
+body {
+  background-color: #000000;
+}
+
+.nav-bar {
+  background-color: #101010;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar img {
+  height: 5vh;
+}
+
+.original-image {
+  position: absolute;
+  z-index: 1;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.hover-image {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.nav-bar:hover .original-image {
+  opacity: 0;
+}
+
+.nav-bar:hover .hover-image {
+  opacity: 1;
+}
+
+.wrapper {
+  background: #000000;
+  height: 90vh;
+}
+
+.container {
+  /* background: whitesmoke; */
+  color: whitesmoke;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 90vh;
+}
+
+.left-hero {
+  /* background: yellow; */
+  width: 50%;
+  display: flex;
+}
+
+.left-hero img {
+  height: 60vh;
+  margin: auto;
+}
+
+.right-hero {
+  width: 50%;
+}
+
+.right-content {
+  /* background: greenyellow; */
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.right-hero p {
+  font-size: 4vh;
+  line-height: 1.5;
+}
+
+.key {
+  color: #6fabd0;
+}
+
+.value {
+  color: #f05e16;
+}
+
+.me {
+  color: #6171a9;
+}
+
+.bracket {
+  color: #ffff00;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/*Normalization*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+}
