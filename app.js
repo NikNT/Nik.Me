@@ -61,7 +61,11 @@ function setupTypewriter(t) {
 }
 
 var typer = document.getElementById("typewriter");
-
 typewriter = setupTypewriter(typewriter);
-
 typewriter.type();
+
+let item = document.getElementsByClassName("emoji");
+item.addEventListener("click", function () {
+  console.log("Clicked!");
+});
+console.log(item);

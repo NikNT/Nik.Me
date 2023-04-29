@@ -4,6 +4,7 @@ html {
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
   font-family: "Zen Dots", cursive;
+  /* height: 5000px; */
 }
 
 body {
@@ -136,15 +137,47 @@ a:hover {
   justify-content: center;
 }
 
+/*Third Section*/
+
 .thirdSection {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: 15vh;
   background: #000000;
+  padding-top: 2vh;
 }
 
-@-webkit-keyframes blink {
+.emoji {
+  font-size: 15vh;
+  padding: 10px 20px;
+}
+
+.check {
+  text-align: center;
+  margin-top: 1px;
+}
+
+.check:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  flex: 0.3;
+  transition: all 0.5s ease-in-out;
+  color: white;
+}
+
+/* .check:hover::after {
+  content: "I love Pizza!";
+  font-size: 3vh;
+  text-align: center;
+  margin-bottom: 2vh;
+} */
+
+/* @-webkit-keyframes blink {
   0% {
     opacity: 0;
   }
@@ -160,16 +193,16 @@ a:hover {
   100% {
     opacity: 1;
   }
-}
+} */
 
-@keyframes blink {
+/* @keyframes blink {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
-}
+} */
 /*Normalization*/
 body,
 div,
