@@ -154,55 +154,36 @@ a:hover {
 
 .check {
   text-align: center;
-  margin-top: 1px;
+  margin-top: 2px;
+  flex: 2;
 }
 
 .check:hover {
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* background: rgba(255, 255, 255, 0.25); */
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  /* backdrop-filter: blur(20px); */
+  /* -webkit-backdrop-filter: blur(20px); */
+  /* border-radius: 10px; */
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
   cursor: pointer;
-  flex: 0.3;
+  /* flex: 0.3; */
   transition: all 0.5s ease-in-out;
   color: white;
+  content: "Random";
+  /* flex: 2; */
 }
 
-/* .check:hover::after {
-  content: "I love Pizza!";
-  font-size: 3vh;
-  text-align: center;
-  margin-bottom: 2vh;
-} */
-
-/* @-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.onmouse {
+  flex: 2;
+  /* transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11); */
+  transition: all 0.5s ease-in;
 }
 
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
-
-/* @keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} */
+.leaveClass {
+  flex: 1;
+  /* transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11); */
+  transition: all 0.5s ease-in-out;
+}
 /*Normalization*/
 body,
 div,

@@ -64,8 +64,18 @@ var typer = document.getElementById("typewriter");
 typewriter = setupTypewriter(typewriter);
 typewriter.type();
 
-let item = document.getElementsByClassName("emoji");
-item.addEventListener("click", function () {
-  console.log("Clicked!");
-});
-console.log(item);
+const flex = document.querySelectorAll(".check");
+
+flex.forEach((item) => item.addEventListener("mouseenter", enter));
+
+function enter() {
+  this.classList.add("onmouse");
+  this.classList.remove("leaveClass");
+}
+
+flex.forEach((item) => item.addEventListener("mouseleave", leave));
+
+function leave() {
+  this.classList.remove("onmouse");
+  this.classList.toggle("leaveClass");
+}
