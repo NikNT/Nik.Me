@@ -128,7 +128,7 @@ a:hover {
 }
 
 /*Second Section*/
-.secondSection {
+.titleBar {
   font-size: 3.5vh;
   color: whitesmoke;
   height: 7vh;
@@ -155,7 +155,7 @@ a:hover {
 .check {
   text-align: center;
   margin-top: 2px;
-  flex: 2;
+  flex: 1;
 }
 
 .check:hover {
@@ -184,6 +184,48 @@ a:hover {
   /* transition: all 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11); */
   transition: all 0.5s ease-in-out;
 }
+
+.fourthSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* flex-direction: column; */
+  color: whitesmoke;
+}
+
+.gitHub,
+.linkedIn {
+  /* border: 2px solid white; */
+  width: 50%;
+  text-align: center;
+  height: 45vh;
+  font-size: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  cursor: pointer;
+}
+
+.fourthSectionImgGithub,
+.fourthSectionImgLinkedIn {
+  height: 10vh;
+  align-items: center;
+}
+
+.fourthSectionImgGithub:hover {
+  content: url(img/github-mark-white.png);
+}
+
+.fourthSectionImgLinkedIn {
+  height: 14vh;
+}
+
+.fourthSectionImgLinkedIn:hover {
+  content: url(img/linkedin-color.png);
+}
+
 /*Normalization*/
 body,
 div,
