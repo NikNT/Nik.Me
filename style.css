@@ -127,6 +127,25 @@ a:hover {
   cursor: pointer;
 }
 
+/* About Me */
+.about {
+  color: white;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.aboutInside {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about p {
+  font-size: 2vh;
+  width: 100%;
+  line-height: 1.5;
+  text-align: justify;
+}
+
 /*Second Section*/
 .titleBar {
   font-size: 3.5vh;
@@ -148,7 +167,7 @@ a:hover {
 }
 
 .emoji {
-  font-size: 15vh;
+  font-size: 10vh;
   padding: 10px 20px;
 }
 
@@ -297,4 +316,38 @@ q:after {
 abbr,
 acronym {
   border: 0;
+}
+
+/* Test Code */
+.test {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  text-align: center;
+  font-size: 10vh;
+  background: black;
+}
+
+.test p {
+  color: whitesmoke;
+  font-size: 2vh;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  height: 20vh;
+  width: 16.6666666667%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.one:hover {
+  flex: 2;
 }
